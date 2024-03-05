@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="glass.css">
+    <title>Glassmorpism</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#" id="myForm">
+            <h2>Login</h2>
+            <div class="input-field">
+            <label for="mail">Enter your email</label>
+            <input type="text" class="mail"></div>
+            <div class="input-field">
+            <label for="pwd">Enter the password</label>
+            <input type="password" class="pwd"><br>
+        </div>
+        <div class="forget">
+            <label for="check">
+            <input class="remember" type="checkbox">
+            <p >Remember me</p></label>
+            <a href="#">Forget password?</a>
+            
+        </div>
+        <button>Log In</button>
+        </form>
+        <div class="reg">
+            <p>Don't have an account?<a href="#">Register</a></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  // Get reference to the form
+  const form = document.getElementById("myForm");
+
+  // Add submit event listener
+  form.addEventListener("submit", function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform actions when the form is submitted
+    // For example, you can perform form validation or submit data via AJAX
+    // For demonstration purposes, let's just log a success message
+    console.log("Form submitted successfully!");
+  });
+});
+
+    </script>
+</body>
+</html>
